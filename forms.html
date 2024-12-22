@@ -1,0 +1,61 @@
+<!-- Forms are used to collect data from the user
+Eg- sign up/login/help requests/contact me -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action.php"> <!--create form -->
+        <!-- The <input> tag in HTML is used to create interactive form elements for user input. 
+        It is a self-closing tag, meaning it doesn't require a closing tag -->
+        <input type="text" placeholder="Type your name"><br><br>
+        <input type="number" placeholder="contact number"><br><br>
+        <input type="password" placeholder="password"><br><br>
+        <!-- here type = the type of input to take eg : text, password, email, number, checkbox, submit etc for input. 
+            and the placeholder is used to guidance to users about what kind of data they should enter in the field. 
+            The placeholder text disappears when the user starts typing in the field. -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <!-- as for eg in radio if click on only circle then only it selected but using labe
+        if we click on the name of the radio then is also selected-->
+        <label for="101">
+            <input type="radio" name="gender" value="male" id="101"> Male
+        </label>
+        <label for="102">
+            <input type="radio" name="gender" value="female" id="102"> Female
+        </label><br>
+        <!-- here user will se only the Male and Female in while words but in the backend developer see the value of the input 
+        so it is neccersary that both are in sync 
+        name in the input is the class of the input  -->
+        <!-- for is used to Specifies the id of the form element the label should be bound to -->
+        <br><br>
+        <h5>Select your subject</h5><br>
+        <!-- to crate multiple option we use checkbox-->
+        <label>
+            <input type="checkbox" value="Maths" name="subject"> Maths <br>
+            <input type="checkbox" value="Chemistry" name="subject"> Chemistry <br>
+            <input type="checkbox" value="Physics" name="subject"> Physics <br>
+            <input type="checkbox" value="CS" name="subject"> CS <br>
+            <input type="checkbox" value="English" name="subject"> English <br>
+        </label>
+        <br>
+        <!-- In HTML, the <select> tag is used to create a dropdown menu, allowing the user to choose one or more options from a list.
+        It's commonly used in forms when you want to provide a set of predefined choices, such as countries, colors, or any other selection. -->
+        <select id="colors" name="color">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+        <br><br>
+        <textarea name="Feedback" id="102" placeholder="Give your Feedback" height="5000" rows="3"></textarea>
+        <!-- rows is used for visiblity of row while user is writing in text area-->
+        <br><br>
+        <!--to submit form -->
+        <input type="submit" value="submit">
+        
+    </form>
+</body>
+</html>
